@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Green Packs – One-Stop Solution for All Packaging Needs</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;600;700;800&family=Barlow+Condensed:wght@600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <a class="nav-logo" href="#">
+      <img class="site-logo header-logo" src="imgs/logo.png" alt="Green Packs">
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#products">Products</a></li>
+      <li><a href="#partners">Partners</a></li>
+      <li><a href="#contact" class="nav-cta">Contact us</a></li>
+    </ul>
+    <button class="hamburger" onclick="document.getElementById('navLinks').classList.toggle('open')" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="slide active">
+      <div class="slide-bg"
+        style="background-image:url('https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=1600&q=80')"></div>
+      <div class="slide-overlay"></div>
+      <div class="slide-content">
+        <span class="slide-eyebrow">One-Stop Solution for All Packaging Needs</span>
+        <h1 class="slide-headline">Strong<br><span class="accent">Packaging.</span><br><span
+            class="accent-blue">Stronger</span> Bonds.</h1>
+        <p class="slide-desc">Corrugated boxes, cartons and custom solutions — engineered for strength, designed for the
+          future.</p>
+        <div class="slide-btns">
+          <a href="#products" class="btn-primary">Explore Products →</a>
+          <a href="#contact" class="btn-outline">Request Quote</a>
+        </div>
+      </div>
+    </div>
+    <div class="slide">
+      <div class="slide-bg"
+        style="background-image:url('https://images.unsplash.com/photo-1553413077-190dd305871c?w=1600&q=80')"></div>
+      <div class="slide-overlay"></div>
+      <div class="slide-content">
+        <span class="slide-eyebrow">Advanced Manufacturing — Since 2010</span>
+        <h1 class="slide-headline">Built for<br><span class="accent">Every</span><br>Industry.</h1>
+        <p class="slide-desc">Automotive, electronics, FMCG, logistics — our packaging protects what matters most across
+          every sector.</p>
+        <div class="slide-btns">
+          <a href="#industries" class="btn-primary">Our Industries →</a>
+          <a href="#about" class="btn-outline">Our Story</a>
+        </div>
+      </div>
+    </div>
+    <div class="slide">
+      <div class="slide-bg"
+        style="background-image:url('https://images.unsplash.com/photo-1618044733300-9472054094ee?w=1600&q=80')"></div>
+      <div class="slide-overlay"></div>
+      <div class="slide-content">
+        <span class="slide-eyebrow">Eco-Friendly · Recyclable · Sustainable</span>
+        <h1 class="slide-headline">Packaging<br>for <span class="accent">Today.</span><br>
+          <!-- <span class="accent-blue">Responsibility</span><br>for Tomorrow.</h1> -->
+        <p class="slide-desc">100% recyclable packaging that supports a greener planet without compromising on strength.
+        </p>
+        <div class="slide-btns">
+          <a href="#sustainability" class="btn-primary">Sustainability →</a>
+          <a href="#contact" class="btn-outline">Partner With Us</a>
+        </div>
+      </div>
+    </div>
+    <div class="hero-dots">
+      <div class="dot active" onclick="goToSlide(0)"></div>
+      <div class="dot" onclick="goToSlide(1)"></div>
+      <div class="dot" onclick="goToSlide(2)"></div>
+    </div>
+    <div class="hero-strip"></div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="about-images reveal-left" style="position:relative">
+      <div class="about-img"><img src="https://images.unsplash.com/photo-1590247813693-5541d1c609fd?w=600&q=80"
+          alt="Manufacturing"></div>
+      <div class="about-img"><img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=600&q=80"
+          alt="Quality control"></div>
+      <div class="about-img"><img src="https://images.unsplash.com/photo-1586528116493-a029325540fa?w=900&q=80"
+          alt="Warehouse"></div>
+      <div class="about-badge"><span class="num">15+</span><span class="lbl">Years of<br>Excellence</span></div>
+    </div>
+    <div class="about-text reveal-right">
+      <span class="section-eyebrow">Who We Are</span>
+      <h2 class="section-title">A Trusted<br><span class="green">Packaging Partner</span><br>Since 2010</h2>
+      <p class="section-body" style="margin-top:1.1rem">Founded in 2010, Green Packs has grown from a visionary start-up
+        into a leading packaging solutions provider — serving businesses of all sizes across diverse industries. Our
+        simple belief: deliver quality, build trust, create lasting value.</p>
+      <p class="section-body" style="margin-top:.9rem">With a state-of-the-art manufacturing facility and a dedicated
+        team, we are more than a manufacturer — we are a partner in your growth.</p>
+      <div class="about-pillars">
+        <div class="pillar">
+          <div class="pillar-icon">🛡️</div>
+          <div>
+            <h4>Quality Assured</h4>
+            <p>Stringent controls at every stage for durable, reliable packaging.</p>
+          </div>
+        </div>
+        <div class="pillar">
+          <div class="pillar-icon">⚙️</div>
+          <div>
+            <h4>Advanced Mfg.</h4>
+            <p>Modern corrugation and printing technology for precision results.</p>
+          </div>
+        </div>
+        <div class="pillar">
+          <div class="pillar-icon">🌿</div>
+          <div>
+            <h4>Eco-Friendly</h4>
+            <p>Responsible materials and sustainable processes throughout.</p>
+          </div>
+        </div>
+        <div class="pillar">
+          <div class="pillar-icon">🤝</div>
+          <div>
+            <h4>Customer First</h4>
+            <p>Tailored solutions, on-time delivery, dedicated support always.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COUNTER -->
+  <div class="counter-section">
+    <div class="counter-header reveal">
+      <span class="section-eyebrow">Our Impact in Numbers</span>
+      <h2 class="section-title">Numbers That Tell <span style="color:var(--green)">Our Story</span></h2>
+    </div>
+    <div class="counter-grid">
+      <div class="counter-card reveal">
+        <div class="counter-ring"><span style="font-size:1.6rem">📅</span></div>
+        <div class="counter-number"><span class="counter-val" data-target="15">0</span><span
+            class="counter-suffix">+</span></div>
+        <div class="counter-bar"></div>
+        <div class="counter-label">Years of Experience</div>
+      </div>
+      <div class="counter-card reveal">
+        <div class="counter-ring"><span style="font-size:1.6rem">😊</span></div>
+        <div class="counter-number"><span class="counter-val" data-target="500">0</span><span
+            class="counter-suffix">+</span></div>
+        <div class="counter-bar"></div>
+        <div class="counter-label">Happy Clients</div>
+      </div>
+      <div class="counter-card reveal">
+        <div class="counter-ring"><span style="font-size:1.6rem">🏭</span></div>
+        <div class="counter-number"><span class="counter-val" data-target="50">0</span><span
+            class="counter-suffix">L+</span></div>
+        <div class="counter-bar"></div>
+        <div class="counter-label">Sq. Ft. Facility</div>
+      </div>
+      <div class="counter-card reveal">
+        <div class="counter-ring"><span style="font-size:1.6rem">📦</span></div>
+        <div class="counter-number"><span class="counter-val" data-target="5">0</span><span
+            class="counter-suffix">M+</span></div>
+        <div class="counter-bar"></div>
+        <div class="counter-label">Packages Delivered</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PRODUCTS -->
+  <section class="products" id="products">
+    <div class="products-header reveal">
+      <div>
+        <span class="section-eyebrow">What We Make</span>
+        <h2 class="section-title">Complete <span class="green">Packaging</span><br><span class="blue">Solutions</span>
+        </h2>
+      </div>
+      <a href="products.html" class="btn-green-outline">View All Products →</a>
+    </div>
+    <div class="products-grid">
+      <div class="product-card reveal">
+        <div class="product-card-img">
+          <div class="product-card-img-bg"
+            style="background-image:url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80')"></div>
+          <div class="product-card-img-overlay"></div><span class="product-tag">Best Seller</span>
+        </div>
+        <div class="product-body">
+          <h3>Heavy Duty Corrugated Boxes</h3>
+          <p>Built with high-strength corrugated sheets for maximum durability and product protection during storage and
+            transit.</p>
+          <div class="product-features"><span class="feature-tag">High Load Capacity</span><span
+              class="feature-tag">Impact Resistant</span><span class="feature-tag">Custom Sizes</span></div>
+          <a href="products.html#heavy-duty" class="product-link">Learn More →</a>
+        </div>
+      </div>
+      <div class="product-card reveal">
+        <div class="product-card-img">
+          <div class="product-card-img-bg"
+            style="background-image:url('https://images.unsplash.com/photo-1589385552043-ccc2e7f553b7?w=600&q=80')">
+          </div>
+          <div class="product-card-img-overlay"></div><span class="product-tag">Logistics</span>
+        </div>
+        <div class="product-body">
+          <h3>Corrugated Storage Boxes</h3>
+          <p>Reliable storage solutions for safe organization, handling and transport of goods across all industries.
+          </p>
+          <div class="product-features"><span class="feature-tag">Strong & Lightweight</span><span
+              class="feature-tag">Easy Assemble</span><span class="feature-tag">Stackable</span></div>
+          <a href="products.html#storage" class="product-link">Learn More →</a>
+        </div>
+      </div>
+      <div class="product-card reveal">
+        <div class="product-card-img">
+          <div class="product-card-img-bg"
+            style="background-image:url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80')">
+          </div>
+          <div class="product-card-img-overlay"></div><span class="product-tag">Export Grade</span>
+        </div>
+        <div class="product-body">
+          <h3>Compressed Wood Pallets</h3>
+          <p>Sustainable, strong, ISPM-15 compliant pallets designed for export and heavy-duty industrial use.</p>
+          <div class="product-features"><span class="feature-tag">ISPM-15 Compliant</span><span
+              class="feature-tag">Termite Resistant</span><span class="feature-tag">Recyclable</span></div>
+          <a href="products.html#pallets" class="product-link">Learn More →</a>
+        </div>
+      </div>
+      <div class="product-card reveal">
+        <div class="product-card-img">
+          <div class="product-card-img-bg"
+            style="background-image:url('https://images.unsplash.com/photo-1553531384-cc64ac80f931?w=600&q=80')"></div>
+          <div class="product-card-img-overlay"></div><span class="product-tag">Custom</span>
+        </div>
+        <div class="product-body">
+          <h3>Custom Carton Boxes</h3>
+          <p>Precision-made carton boxes tailored to your exact dimensions, print specs and branding requirements.</p>
+          <div class="product-features"><span class="feature-tag">Full Print</span><span class="feature-tag">Any
+              Dimension</span><span class="feature-tag">Branded</span></div>
+          <a href="products.html#carton" class="product-link">Learn More →</a>
+        </div>
+      </div>
+      <div class="product-card reveal">
+        <div class="product-card-img">
+          <div class="product-card-img-bg"
+            style="background-image:url('https://images.unsplash.com/photo-1491756557761-42b5e8ef61e2?w=600&q=80')">
+          </div>
+          <div class="product-card-img-overlay"></div><span class="product-tag">Industrial</span>
+        </div>
+        <div class="product-body">
+          <h3>Industrial Packaging Sheets</h3>
+          <p>Heavy-grade corrugated sheets for wrapping, partitioning and protective padding within large consignments.
+          </p>
+          <div class="product-features"><span class="feature-tag">Multi-Layer</span><span
+              class="feature-tag">Cushioning</span><span class="feature-tag">Bulk Order</span></div>
+          <a href="products.html#sheets" class="product-link">Learn More →</a>
+        </div>
+      </div>
+      <div class="product-card reveal">
+        <div class="product-card-img">
+          <div class="product-card-img-bg"
+            style="background-image:url('https://images.unsplash.com/photo-1545454675-3531b543be5d?w=600&q=80')"></div>
+          <div class="product-card-img-overlay"></div><span class="product-tag">Eco</span>
+        </div>
+        <div class="product-body">
+          <h3>Eco-Friendly Packaging</h3>
+          <p>100% recyclable packaging made from post-consumer waste material — sustainable by design.</p>
+          <div class="product-features"><span class="feature-tag">Recycled Material</span><span
+              class="feature-tag">Biodegradable</span><span class="feature-tag">Zero-Waste</span></div>
+          <a href="products.html#eco" class="product-link">Learn More →</a>
+        </div>
+      </div>
+    </div>
+    <div class="products-footer reveal">
+      <a href="products.html" class="btn-primary" style="font-size:1rem;padding:1rem 3rem">View All Products &nbsp;→</a>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════
+     SECTION 5 — PARTNERS / CLIENTS LOGO TICKER
+     ════════════════════════════════════════════════════
+     HOW TO ADD YOUR LOGOS — 3 simple steps:
+     1. Copy your logo PNG/JPG/SVG into the SAME folder
+        as this HTML file.
+     2. Find the block  ▼ ADD YOUR LOGOS HERE ▼  below.
+     3. For each logo, change:
+          src="logo-client-1.png"  →  your filename
+          alt="Client 1"           →  company/partner name
+        (Copy the whole <div class="partner-logo-item"> block
+         to add more logos.)
+     You can also use a full URL as the src.
+     The ticker loops automatically — no JS changes needed.
+     ════════════════════════════════════════════════════ -->
+  <section class="partners-section" id="partners">
+    <div class="partners-top reveal">
+      <div class="partners-tagline">Our Clients &amp; Partners</div>
+      <h2 class="partners-heading">Trusted by <span>Leading Brands</span></h2>
+      <p class="partners-sub">Companies across industries rely on Green Packs for their packaging needs.</p>
+    </div>
+
+    <div class="partners-ticker-wrap">
+      <div class="partners-track" id="partnerTrack">
+
+        <div class="partner-logo-item">
+          <div class="partner-logo-box">
+            <img src="imgs/partners_logo/1.png" alt="Client logo 1">
+          </div>
+        </div>
+
+        <div class="partner-logo-item">
+          <div class="partner-logo-box">
+            <img src="imgs/partners_logo/2.png" alt="Client logo 2">
+          </div>
+        </div>
+
+        <div class="partner-logo-item">
+          <div class="partner-logo-box">
+            <img src="imgs/partners_logo/3.png" alt="Client logo 3">
+          </div>
+        </div>
+
+        <div class="partner-logo-item">
+          <div class="partner-logo-box">
+            <img src="imgs/partners_logo/4.png" alt="Client logo 4">
+          </div>
+        </div>
+
+        <div class="partner-logo-item">
+          <div class="partner-logo-box">
+            <img src="imgs/partners_logo/5.png" alt="Client logo 5">
+          </div>
+        </div>
+
+        <div class="partner-logo-item">
+          <div class="partner-logo-box">
+            <img src="imgs/partners_logo/6.png" alt="Client logo 6">
+          </div>
+        </div>
+
+        <div class="partner-logo-item">
+          <div class="partner-logo-box">
+            <img src="imgs/partners_logo/7.png" alt="Client logo 7">
+          </div>
+        </div>
+
+        <div class="partner-logo-item">
+          <div class="partner-logo-box">
+            <img src="imgs/partners_logo/8.png" alt="Client logo 8">
+          </div>
+        </div>
+
+        <div class="partner-logo-item">
+          <div class="partner-logo-box">
+            <img src="imgs/partners_logo/9.png" alt="Client logo 9">
+          </div>
+        </div>
+
+        <div class="partner-logo-item">
+          <div class="partner-logo-box">
+            <img src="imgs/partners_logo/10.png" alt="Client logo 10">
+          </div>
+        </div>
+
+        <div class="partner-logo-item">
+          <div class="partner-logo-box">
+            <img src="imgs/partners_logo/11.png" alt="Client logo 11">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- INDUSTRIES -->
+  <section class="industries" id="industries">
+    <div class="reveal">
+      <span class="section-eyebrow">Who We Serve</span>
+      <h2 class="section-title" style="color:var(--white)">Industries<br><span class="green">We Power</span></h2>
+      <p class="section-body" style="margin-top:1rem">Tailored packaging solutions that power every industry forward —
+        from the factory floor to global export.</p>
+    </div>
+    <div class="industries-grid">
+      <div class="industry-card reveal">
+        <div class="industry-icon">🚗</div>
+        <h3>Automotive</h3>
+        <p>Durable packaging for automotive parts and components, ensuring maximum protection during storage and
+          transit.</p>
+      </div>
+      <div class="industry-card reveal">
+        <div class="industry-icon">⚙️</div>
+        <h3>Engineering</h3>
+        <p>Strong and reliable packaging for heavy machinery and precision-engineered components.</p>
+      </div>
+      <div class="industry-card reveal">
+        <div class="industry-icon">💻</div>
+        <h3>Electronics</h3>
+        <p>Protective packaging for sensitive electronics ensuring safety, reliability and damage-free delivery.</p>
+      </div>
+      <div class="industry-card reveal">
+        <div class="industry-icon">🛒</div>
+        <h3>FMCG</h3>
+        <p>Cost-effective and hygiene-focused packaging for fast-moving consumer goods — efficiency and brand
+          protection.</p>
+      </div>
+      <div class="industry-card reveal">
+        <div class="industry-icon">🚚</div>
+        <h3>Logistics</h3>
+        <p>Efficient packaging solutions that streamline handling, storage and transportation across the supply chain.
+        </p>
+      </div>
+      <div class="industry-card reveal">
+        <div class="industry-icon">🌐</div>
+        <h3>Export</h3>
+        <p>Export-grade packaging meeting international standards ensuring safe worldwide delivery.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY US -->
+  <section class="why-us">
+    <div class="why-text reveal-left">
+      <span class="section-eyebrow">Why Green Packs</span>
+      <h2 class="section-title">Delivering More<br>Than Just<br><span class="green">Packaging</span></h2>
+      <p class="section-body" style="margin-top:1rem">We combine innovation, technology and a customer-first approach to
+        deliver packaging solutions that protect your products and elevate your brand.</p>
+      <div class="why-list">
+        <div class="why-item">
+          <div class="why-num">01</div>
+          <div>
+            <h4>Quality Assurance</h4>
+            <p>Stringent quality control at every stage ensures consistent, durable and reliable packaging solutions.
+            </p>
+          </div>
+        </div>
+        <div class="why-item">
+          <div class="why-num">02</div>
+          <div>
+            <h4>Fast Delivery</h4>
+            <p>Efficient production and streamlined logistics ensure on-time delivery every time without fail.</p>
+          </div>
+        </div>
+        <div class="why-item">
+          <div class="why-num">03</div>
+          <div>
+            <h4>Cost Efficiency</h4>
+            <p>Optimized processes and smart material usage deliver maximum value at competitive prices.</p>
+          </div>
+        </div>
+        <div class="why-item">
+          <div class="why-num">04</div>
+          <div>
+            <h4>Custom Solutions</h4>
+            <p>Tailored packaging designed to meet your unique product requirements and business needs.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="why-visual reveal-right">
+      <div class="why-float-2">
+        <div class="ico">🏆</div>ISO Certified<br>Quality
+      </div>
+      <img class="why-main-img" src="https://images.unsplash.com/photo-1602080858428-57174f9431cf?w=700&q=80"
+        alt="Green Packs facility">
+      <div class="why-float-1">
+        <div class="big">500+</div>
+        <div class="sml">Satisfied Clients<br>Across India</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SUSTAINABILITY -->
+  <section class="sustainability" id="sustainability">
+    <span class="section-eyebrow">Our Commitment</span>
+    <h2 class="section-title">Packaging for Today.<br><span class="green">Responsibility</span> for <span
+        class="blue">Tomorrow.</span></h2>
+    <p class="section-body">Delivering durable packaging solutions while supporting a more sustainable future.
+      Sustainability is embedded in everything we do.</p>
+    <div class="sustain-grid">
+      <div class="sustain-card reveal">
+        <div class="sustain-icon">♻️</div>
+        <h4>Recyclable Packaging</h4>
+        <p>100% recyclable, made from eco-friendly materials that don't compromise on strength.</p>
+      </div>
+      <div class="sustain-card reveal">
+        <div class="sustain-icon">🗑️</div>
+        <h4>Reduced Waste</h4>
+        <p>We minimize waste through efficient processes and responsible manufacturing operations.</p>
+      </div>
+      <div class="sustain-card reveal">
+        <div class="sustain-icon">🌿</div>
+        <h4>Resource Efficiency</h4>
+        <p>Smart utilization of resources to reduce environmental impact at every step.</p>
+      </div>
+      <div class="sustain-card reveal">
+        <div class="sustain-icon">🏭</div>
+        <h4>Clean Manufacturing</h4>
+        <p>Our facilities use clean energy and sustainable practices to build a better tomorrow.</p>
+      </div>
+      <div class="sustain-card reveal">
+        <div class="sustain-icon">🌍</div>
+        <h4>Responsible Solutions</h4>
+        <p>We partner with purpose, delivering packaging solutions that support a greener planet.</p>
+      </div>
+    </div>
+    <div class="sustain-banner reveal">
+      <div class="sustain-banner-text">
+        <h3>Sustainable by Design. Responsible by Choice.</h3>
+        <p>From raw materials to partnerships — every decision at Green Packs is guided by responsibility.</p>
+      </div>
+      <a href="#contact">Start Your Green Journey →</a>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact-section" id="contact">
+    <div class="reveal-left">
+      <span class="section-eyebrow">Get In Touch</span>
+      <h2 class="section-title" style="color:var(--white)">Let's Package<br><span
+          class="green">Success</span><br>Together</h2>
+      <p class="section-body" style="color:rgba(255,255,255,.55);margin-top:1rem">We're here to help you pack better and
+        grow faster. Reach out and let's build a lasting partnership.</p>
+      <div class="contact-info">
+        <div class="contact-row">
+          <div class="contact-icon">📞</div>
+          <div>
+            <h5>Phone</h5>
+            <p>+91 12345 67890 &nbsp;|&nbsp; +91 98765 43210</p>
+          </div>
+        </div>
+        <div class="contact-row">
+          <div class="contact-icon">✉️</div>
+          <div>
+            <h5>Email</h5>
+            <p>info@greenpacks.com &nbsp;|&nbsp; sales@greenpacks.com</p>
+          </div>
+        </div>
+        <div class="contact-row">
+          <div class="contact-icon">🌐</div>
+          <div>
+            <h5>Website</h5>
+            <p>www.greenpacks.com</p>
+          </div>
+        </div>
+        <div class="contact-row">
+          <div class="contact-icon">📍</div>
+          <div>
+            <h5>Address</h5>
+            <p>Your Address Here, City, State – PIN</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="contact-form reveal-right">
+      <h3>Request a Quote</h3>
+      <div class="form-row">
+        <div class="form-group"><label>Your Name</label><input type="text" placeholder="Full name"></div>
+        <div class="form-group"><label>Company</label><input type="text" placeholder="Company name"></div>
+      </div>
+      <div class="form-row">
+        <div class="form-group"><label>Phone</label><input type="tel" placeholder="+91 00000 00000"></div>
+        <div class="form-group"><label>Email</label><input type="email" placeholder="email@company.com"></div>
+      </div>
+      <div class="form-group">
+        <label>Product Interest</label>
+        <select>
+          <option>Heavy Duty Corrugated Boxes</option>
+          <option>Corrugated Storage Boxes</option>
+          <option>Compressed Wood Pallets</option>
+          <option>Custom Carton Boxes</option>
+          <option>Industrial Packaging Sheets</option>
+          <option>Eco-Friendly Packaging</option>
+          <option>Other</option>
+        </select>
+      </div>
+      <div class="form-group"><label>Message</label><textarea
+          placeholder="Tell us about your packaging requirement..."></textarea></div>
+      <button class="btn-primary" style="width:100%;justify-content:center">Send Enquiry →</button>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img class="site-logo footer-logo" src="imgs/logo.png" alt="Green Packs">
+        <p>One-Stop Solution for All Packaging Needs. Quality, trust and innovation in every box we create. A trusted
+          packaging partner since 2010.</p>
+        <div class="footer-socials">
+          <a class="footer-social" href="#" title="LinkedIn">in</a>
+          <a class="footer-social" href="#" title="Facebook">f</a>
+          <a class="footer-social" href="#" title="Instagram">ig</a>
+          <a class="footer-social" href="#" title="Twitter">𝕏</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5>Company</h5>
+        <ul>
+         <li><a href="#home">Home</a></li>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#products">Products</a></li>
+      <li><a href="#partners">Partners</a></li>
+      <li><a href="#contact">Contact us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Products</h5>
+        <ul>
+          <li><a href="products.html#heavy-duty">Heavy Duty Boxes</a></li>
+          <li><a href="products.html#storage">Storage Boxes</a></li>
+          <li><a href="products.html#pallets">Wood Pallets</a></li>
+          <li><a href="products.html#carton">Custom Cartons</a></li>
+          <li><a href="products.html#eco">Eco Packaging</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Industries</h5>
+        <ul>
+          <li><a href="#">Automotive</a></li>
+          <li><a href="#">Engineering</a></li>
+          <li><a href="#">Electronics</a></li>
+          <li><a href="#">FMCG</a></li>
+          <li><a href="#">Logistics &amp; Export</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2024 <span>Green Packs</span>. All rights reserved.</p>
+      <p>Strong Packaging. <span>Stronger Partnerships.</span></p>
+    </div>
+  </footer>
+
+  <script>
+    // HERO CAROUSEL
+    let cur = 0;
+    const slides = document.querySelectorAll('.slide');
+    const dots = document.querySelectorAll('.dot');
+    let timer;
+    function goToSlide(n) {
+      slides[cur].classList.remove('active'); dots[cur].classList.remove('active');
+      cur = n; slides[cur].classList.add('active'); dots[cur].classList.add('active');
+      clearInterval(timer); timer = setInterval(next, 5500);
+    }
+    function next() { goToSlide((cur + 1) % slides.length) }
+    timer = setInterval(next, 5500);
+
+    // SCROLL REVEAL
+    const allReveals = document.querySelectorAll('.reveal,.reveal-left,.reveal-right');
+    const obs = new IntersectionObserver(entries => {
+      entries.forEach((e, i) => { if (e.isIntersecting) setTimeout(() => e.target.classList.add('visible'), i * 90) });
+    }, { threshold: 0.1 });
+    allReveals.forEach(el => obs.observe(el));
+
+    // COUNTER
+    function animateCounters() {
+      document.querySelectorAll('.counter-val').forEach(el => {
+        const target = +el.dataset.target; let current = 0;
+        const step = target / (1800 / 16);
+        const iv = setInterval(() => {
+          current = Math.min(current + step, target);
+          el.textContent = Math.round(current);
+          if (current >= target) clearInterval(iv);
+        }, 16);
+      });
+    }
+    const cObs = new IntersectionObserver(e => { if (e[0].isIntersecting) { animateCounters(); cObs.disconnect() } }, { threshold: .25 });
+    cObs.observe(document.querySelector('.counter-section'));
+
+    // NAV SHADOW
+    window.addEventListener('scroll', () => {
+      document.getElementById('navbar').style.boxShadow = window.scrollY > 50 ? '0 4px 30px rgba(0,0,0,.13)' : '0 2px 20px rgba(0,0,0,.08)';
+    });
+
+    // MOBILE NAV CLOSE
+    document.querySelectorAll('.nav-links a').forEach(a => {
+      a.addEventListener('click', () => document.getElementById('navLinks').classList.remove('open'));
+    });
+
+    // IMAGE FALLBACKS
+    document.querySelectorAll('img').forEach(img => {
+      img.addEventListener('error', () => {
+        if (img.dataset.fallbackApplied) return;
+        img.dataset.fallbackApplied = 'true';
+        img.classList.add('image-missing');
+        img.src = 'imgs/packaging-fallback.svg';
+      });
+    });
+
+    // PARTNERS TICKER — auto-duplicates items for seamless loop
+    (function initTicker() {
+      const track = document.getElementById('partnerTrack');
+      if (!track) return;
+      const items = Array.from(track.querySelectorAll('.partner-logo-item'));
+      if (!items.length) return;
+      items.forEach(item => {
+        const clone = item.cloneNode(true);
+        clone.setAttribute('aria-hidden', 'true');
+        track.appendChild(clone);
+      });
+      // speed: 4s per logo, min 16s
+      track.style.animationDuration = Math.max(16, items.length * 4) + 's';
+    })();
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" role="img" aria-labelledby="title desc">
+  <title id="title">Packaging boxes illustration</title>
+  <desc id="desc">Green Packs packaging boxes and warehouse-inspired pattern.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f2f7ed"/>
+      <stop offset="0.52" stop-color="#d7ecc8"/>
+      <stop offset="1" stop-color="#b9df96"/>
+    </linearGradient>
+    <linearGradient id="box" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#d7ad78"/>
+      <stop offset="1" stop-color="#8b5e3c"/>
+    </linearGradient>
+    <pattern id="grid" width="46" height="46" patternUnits="userSpaceOnUse">
+      <path d="M46 0H0V46" fill="none" stroke="#2d8a29" stroke-opacity=".14" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="900" height="560" fill="url(#bg)"/>
+  <rect width="900" height="560" fill="url(#grid)"/>
+  <circle cx="760" cy="70" r="170" fill="#3aaa35" opacity=".16"/>
+  <circle cx="110" cy="480" r="190" fill="#8b5e3c" opacity=".10"/>
+  <g transform="translate(188 130)">
+    <path d="M72 112 236 36l178 76-176 82Z" fill="#e5bd85"/>
+    <path d="M72 112v188l166 90V194Z" fill="#bf8550"/>
+    <path d="M414 112v188l-176 90V194Z" fill="#9a683f"/>
+    <path d="M238 194 414 112" fill="none" stroke="#704626" stroke-width="5" opacity=".35"/>
+    <path d="M238 194 72 112" fill="none" stroke="#704626" stroke-width="5" opacity=".25"/>
+    <path d="M236 36v82" fill="none" stroke="#704626" stroke-width="5" opacity=".24"/>
+    <path d="M132 244h74v34h-74z" fill="#f8eed9" opacity=".9"/>
+    <path d="M300 242 364 210v90l-64 34z" fill="#7a4d2d" opacity=".26"/>
+  </g>
+  <g fill="#1e6b1a">
+    <rect x="612" y="350" width="92" height="12" rx="6" opacity=".75"/>
+    <rect x="612" y="378" width="150" height="12" rx="6" opacity=".55"/>
+    <rect x="612" y="406" width="118" height="12" rx="6" opacity=".42"/>
+  </g>
+</svg>
